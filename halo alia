@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salam Kenal</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      font-size: 8vw; /* agar pas di layar HP */
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+      animation: bounce 2s infinite;
+      z-index: 1;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .sticker {
+      position: absolute;
+      top: 15%;
+      font-size: 10vw;
+      animation: moveSticker 5s linear infinite alternate;
+    }
+    @keyframes moveSticker {
+      0% { left: 5%; transform: rotate(0deg);}
+      100% { left: 75%; transform: rotate(360deg);}
+    }
+  </style>
+</head>
+<body>
+  <h1>salam kenal alia🙌</h1>
+  <div class="sticker">✨</div>
+</body>
+</html>
